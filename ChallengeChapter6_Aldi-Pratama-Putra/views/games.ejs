@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- Linked CSS File -->
+    <link rel="stylesheet" href="../public/css/games.css">
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0 p-0" href="http://localhost:3000/">
+                <button class="backButton d-flex justify-content-center align-items-center"> 
+                    <p class="text-center"> Logout </p>
+                </button>
+            </a>
+            <img src="../public/images/logo.png" alt="" class="d-inline-block">
+            <p class="brandName d-inline-block m-0">ROCK PAPER SCISSORS</p> 
+        </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+    <!-- PLAYER NAME -->
+    <div class="playerName container-fluid row">
+        <div class="player col-sm-3 offset-2 text-center">
+            <p>PLAYER 1</p>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="computer col-sm-3 text-center">
+            <p>COM</p>
+        </div>
+    </div>
+    <!-- PLAYER NAME END-->
+
+    <!-- ACTIONS -->
+    <div class="Action container-fluid row">
+        <!-- Player -->
+        <div class="player col-sm-3 offset-2 d-flex flex-column justify-content-sm-around align-items-center">
+            <button data-option="rock">
+                <img src="../public/images/batu.png" alt="" class="playerRock" data-option="rock">
+            </button>
+            <button data-option="paper">
+                <img src="../public/images/kertas.png" alt="" class="playerPaper" data-option="paper">  
+            </button>
+            <button data-option="scissors">
+                <img src="../public/images/gunting.png" alt="" class="playerScissors" data-option="scissors">
+            </button>    
+        </div>
+
+        <!-- Status -->
+        <div id="status" class="status col-sm-2 d-flex align-items-center justify-content-center text-center">
+            VS
+        </div>
+
+        <!-- Computer -->
+        <div class="computer col-sm-3 d-flex flex-column justify-content-sm-around align-items-center">
+            <button data-option="rock">
+                <img src="../public/images/batu.png" alt="" class="compRock">
+            </button>
+            <button data-option="paper">
+                <img src="../public/images/kertas.png" alt="" class="compPaper"> 
+            </button>
+            <button data-option="scissors">
+                <img src="../public/images/gunting.png" alt="" class="compScissors">
+            </button>  
+        </div>
+    </div>
+    <!-- ACTIONS END -->
+
+    <!-- REFRESH -->
+    <div class="refresh container-fluid row">
+        <div class="col-sm-12 text-center">
+            <button id="refreshButton">
+                <img src="../public/images/refresh.png" class="refreshButton" alt="">
+            </button>
+            
+        </div>
+    </div>
+    <!-- REFRESH END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="../public/js/game.js"></script>
+    <script src="../public/js/choice.js"></script>
+    <script src="../public/js/result.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
